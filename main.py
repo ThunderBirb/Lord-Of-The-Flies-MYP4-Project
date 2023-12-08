@@ -9,9 +9,19 @@ ValueTable = {
 
 class RTeam:
     held = []
+    relations = {
+        "Name": 0,
+        "Name": 0,
+        "Name": 0
+    }
 
 class JTeam:
     held = []
+    relations = {
+        "Name": 0,
+        "Name": 0,
+        "Name": 0
+    }
 
 def Choice(team, text, choices):
     print(text)
