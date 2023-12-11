@@ -18,7 +18,7 @@ class Piggy:
     }
 
 class Ralph:
-    strengths = ["Athletic", "Good Charisma"]
+    strengths = ["Athletic", "Good Charisma", "Leader"]
     held = []
     relations = {
         "Name": 0,
@@ -27,7 +27,7 @@ class Ralph:
     }
 
 class Jack:
-    strengths = ["Leader of the hunters"]
+    strengths = ["brave", "Leader of the hunters"]
     held = []
     relations = {
         "Name": 0,
@@ -53,10 +53,16 @@ class Samneric:
         "Name": 0
     }
 
-def Choice(person, text, choices):
+def Choose(person, text="What would you like to do?", choices=[]):
     print(text)
     for x in choices:
         print(f"{choices.index(x)+1}. {x}")
+    
+    choice = input("Number: ")
+    return choice
 
 
-Choice(Piggy, "What would you like to do?", ["Sleep", "Take a bath", "Eat", "Trade"])
+Choose(Piggy, "What would you like to dooooo", ["Sleep", "Take a bath", "Eat", "Trade"])
+
+Choose(Piggy, choices=["sell", "Destroy", "Eat"])
+
