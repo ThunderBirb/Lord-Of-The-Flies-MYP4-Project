@@ -10,6 +10,7 @@ ValueTable = {
 
 class Piggy:
     strengths = ["Has his glasses", "Smart"]
+    weaknesses = ["Asthma", "Relies on glasses"]
     held = ["Glasses"]
     relations = {
         "Name": 0,
@@ -19,7 +20,7 @@ class Piggy:
 
 class Ralph:
     strengths = ["Athletic", "Good Charisma", "Leader"]
-    held = []
+    held = ["Bad with important decisions", "Fears a lot of things"]
     relations = {
         "Name": 0,
         "Name": 0,
@@ -28,6 +29,7 @@ class Ralph:
 
 class Jack:
     strengths = ["brave", "Leader of the hunters"]
+    weaknesses = ["Fragile ego", "Overconfident"]
     held = []
     relations = {
         "Name": 0,
@@ -37,6 +39,7 @@ class Jack:
 
 class Roger:
     strengths = ["Good with weapons"]
+    weaknesses = ["Isolation"]
     held = []
     relations = {
         "Name": 0,
@@ -46,6 +49,7 @@ class Roger:
 
 class Samneric:
     strengths = ["Civilised", "Reasonable"]
+    weaknesses = ["Easily intimidated"]
     held = []
     relations = {
         "Name": 0,
