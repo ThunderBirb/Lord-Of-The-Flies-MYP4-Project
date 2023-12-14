@@ -1,6 +1,8 @@
 import time
 import sys
 
+PlayerChar = None
+
 PeopleList = ["piggy", "ralph", "jack", "roger", "samneric"]
 
 ValueTable = {
@@ -122,9 +124,17 @@ def ShowPersonInfo(person):
 #MAIN AREA FOR RUNNING CODE
 while True: #starting the main game loop
     print("Weclome to, Let's try... diplomacy!")
+    time.sleep(1)
     print("This game is designed by Lila, Thomas, Thor, Viki and Zayan, and coded by Thor \n")
+    time.sleep(3)
     print("This game is based on the book Lord Of The Flies written by William Golding")
-
-
+    time.sleep(3)
+    print("Your ojective in this game is to get the best outcome for your side")
+    time.sleep(3)
+    PlayerChar = Choice(None, "Who would you like to play as?", ["Piggy", "Ralph", "Jack", "Roger", "Samneric"])
+    if PlayerChar == "1":
+        PlayerChar = 
+    PlayerChar = eval(PlayerChar)
+    type(PlayerChar)
 
     break #TEMPORARY SAFESTOP
