@@ -1,9 +1,7 @@
 import time
 import sys
 
-PlayerChar = None
-
-PeopleList = ["piggy", "ralph", "jack", "roger", "samneric"]
+PeopleList = ["Piggy", "Ralph", "Jack", "Roger", "Samneric"]
 
 ValueTable = {
     "Spear":2,
@@ -131,10 +129,28 @@ while True: #starting the main game loop
     time.sleep(3)
     print("Your ojective in this game is to get the best outcome for your side")
     time.sleep(3)
-    PlayerChar = Choice(None, "Who would you like to play as?", ["Piggy", "Ralph", "Jack", "Roger", "Samneric"])
-    if PlayerChar == "1":
-        PlayerChar = 
-    PlayerChar = eval(PlayerChar)
-    type(PlayerChar)
+    while True:
+        print("Who would you like to play as?:")
+        for x in ["Piggy", "Ralph", "Jack", "Roger", "Samneric"]:
+            print(f"{PeopleList.index(x)+1}. {x}")
+        PlayerChar = input("Number:")
+        if PlayerChar == "1":
+            PlayerChar = Piggy
+            break
+        elif PlayerChar == "2":
+            PlayerChar = Ralph
+            break
+        elif PlayerChar == "3":
+            PlayerChar = Jack
+            break
+        elif PlayerChar == "4":
+            PlayerChar = Roger
+            break
+        elif PlayerChar == "5":
+            PlayerChar = Samneric
+            break
+        else:
+            print("That is not a valid answer, please answer again with a number")
+    
 
     break #TEMPORARY SAFESTOP
