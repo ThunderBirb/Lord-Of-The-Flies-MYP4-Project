@@ -119,6 +119,7 @@ def ShowPersonInfo(person):
 
 
 
+
 #MAIN AREA FOR RUNNING CODE
 while True: #starting the main game loop
     print("Weclome to, Let's try... diplomacy!")
@@ -135,22 +136,62 @@ while True: #starting the main game loop
             print(f"{PeopleList.index(x)+1}. {x}")
         PlayerChar = input("Number:")
         if PlayerChar == "1":
-            PlayerChar = Piggy
-            break
+            print("\nWould you like to play as Piggy?")
+            print(f"Strengths: {Piggy.strengths}")
+            print(f"Weaknesses: {Piggy.weaknesses}")
+            yn = Choice(None, "", ["Yes", "No"])
+            if yn == 1:
+                PlayerChar = Piggy
+                break
+            else:
+                pass
         elif PlayerChar == "2":
-            PlayerChar = Ralph
-            break
+            print("\nWould you like to play as Ralph?")
+            print(f"Strengths: {Ralph.strengths}")
+            print(f"Weaknesses: {Ralph.weaknesses}")
+            yn = Choice(None, "", ["Yes", "No"])
+            if yn == 1:
+                PlayerChar = Ralph
+                break
+            else:
+                pass
         elif PlayerChar == "3":
-            PlayerChar = Jack
-            break
+            print("\nWould you like to play as Jack?")
+            print(f"Strengths: {Jack.strengths}")
+            print(f"Weaknesses: {Jack.weaknesses}")
+            yn = Choice(None, "", ["Yes", "No"])
+            if yn == 1:
+                PlayerChar = Jack
+                break
+            else:
+                pass
         elif PlayerChar == "4":
-            PlayerChar = Roger
-            break
+            print("\nWould you like to play as Roger?")
+            print(f"Strengths: {Roger.strengths}")
+            print(f"Weaknesses: {Roger.weaknesses}")
+            yn = Choice(None, "", ["Yes", "No"])
+            if yn == 1:
+                PlayerChar = Roger
+                break
+            else:
+                pass
         elif PlayerChar == "5":
-            PlayerChar = Samneric
-            break
+            print("\nWould you like to play as Samneric?")
+            print(f"Strengths: {Samneric.strengths}")
+            print(f"Weaknesses: {Samneric.weaknesses}")
+            yn = Choice(None, "", ["Yes", "No"])
+            if yn == 1:
+                PlayerChar = Samneric
+                break
+            else:
+                pass
         else:
             print("That is not a valid answer, please answer again with a number")
+        
+
+        
     
+
+
 
     break #TEMPORARY SAFESTOP
